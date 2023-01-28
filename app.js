@@ -1,4 +1,8 @@
 
+// import the variables and function from counter.js and timer.js
+
+import {count1,minutes,seconds,miliseconds,timerRunning,interval,startTimer,returnData,startButton,pauseButton,resetButton,createTimer} from "./src/timer/timer.js" ;
+import { count,incrementCount,decrementCount,updateCount,createCounter } from "./src/counter/counter.js" ;
 
 const createappjs=()=>{
 
@@ -44,14 +48,15 @@ labellt.appendChild(tc1);
 input1_counter.innerText="COUNTER";
 input2_timer.innerText="TIMER";
 
-//adding event listener
+
 
 
 //append child to body
 
 
 document.body.appendChild(totalContainer);
-
+//const root=document.getElementById("root");
+//root.appendChild(totalContainer);
 totalContainer.appendChild(labell);
 totalContainer.appendChild(input1_counter);
 totalContainer.appendChild(labellc);
@@ -64,56 +69,5 @@ totalContainer.appendChild(paragraph);
 
 
 
-
-
-
 createappjs();
-
-  //integrating the applications
-/*
-let value1=false;
-let value2=false;
-
-    let result = document.querySelector('#result');
-
-        document.body.addEventListener('change', function (e) {
-         
-            let target = e.target;
-            let message;
-           
-
-            
-              
-            switch (target.id) {
-                
-                 
-              
-                case 'Counter':
-                   
-                      if(!value1){
-                     message=createCounter();
-
-                     value1=true;}
-
-                    break;
-
-                      
-              
-                case 'Timer':
-                    if(value1){
-                    message = createTimer();
-                    value1=false;}
-                              break;
-            
-                    }
-           result.textContent = message;
-
-                               
-        });
-
-    */ 
-
-// import the variables and function from counter.js
-
-import {count1,minutes,seconds,miliseconds,timerRunning,interval,startTimer,returnData,startButton,pauseButton,resetButton,createTimer} from "./src/timer/timer.js" ;
-import { count,incrementCount,decrementCount,updateCount,createCounter } from "./src/counter/counter.js" ;
+   
